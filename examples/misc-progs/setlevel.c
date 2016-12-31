@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     int level;
 
     if (argc==2) {
-	level = atoi(argv[1]); /* the chosen console */
+    level = atoi(argv[1]); /* the chosen console */
     } else {
         fprintf(stderr, "%s: need a single arg\n",argv[0]); exit(1);
     }

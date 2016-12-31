@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     }
     /* the offset might be big (e.g., PCI devices), but conversion trims it */
     if (offset == INT_MAX) {
-	if (argv[2][1]=='x')
+    if (argv[2][1]=='x')
             sscanf(argv[2]+2, "%lx", &offset);
         else
             sscanf(argv[2], "%lu", &offset);
